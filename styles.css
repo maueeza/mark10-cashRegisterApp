@@ -1,0 +1,22 @@
+
+body{
+    margin: 0px;
+}
+
+:root{
+    --primary_color : #9d174d;
+}
+
+#heading_cash_register{
+    color: #9d174d;
+}
+
+#container{
+    margin: auto;
+    
+    padding: 0rem 1rem;
+}
+
+.main{
+       margin: auto;
+}
