@@ -5,6 +5,9 @@ var inpCash = document.querySelector("#cash-note");
 
 //console.log(cashAmt);
 
+const noOfNotes = document.querySelectorAll(".notes-data");
+//console.log("table rows :",noOfNotes);
+
 var chk_Btn = document.querySelector("#check-btn");
 const next_Btn = document.querySelector("#next-btn");
 next_Btn.style.display = "none";
@@ -28,6 +31,8 @@ function calculateChange(amtToBeReturned)
         amtToBeReturned = amtToBeReturned%currenciesPresent[i];
         console.log(i+ " iteration value of amtToBeReturned: "+amtToBeReturned);
         DenominationsToBeGiven[i] = noOfNotesForCurrDenomination;
+        
+        noOfNotes[i].innerText = DenominationsToBeGiven[i];
 
     }
     console.log(DenominationsToBeGiven);
@@ -63,14 +68,14 @@ function validateInputs()
 
 function billChangeEventHandler()
 {
-    next_Btn.style.display = "initial";
+    next_Btn.style.display = "block";
 }
 
 function nextBtnEventHandler()
 {
-    lbl_cash.style.display = "initial";
-    inpCash.style.display = "initial";
-    chk_Btn.style.display = "initial";
+    lbl_cash.style.display = "block";
+    inpCash.style.display = "block";
+    chk_Btn.style.display = "block";
 }
 
 inpBillAmount.addEventListener("change",billChangeEventHandler);
