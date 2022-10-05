@@ -104,3 +104,28 @@ table>caption{
     font-weight: bold;
     text-align: justify;
 }
+
+#footer{
+    display: block;
+    height: auto;
+    text-align: center;
+    /*color: var(--primary-color);*/
+    padding-top: 0.5rem;
+   
+}
+
+#footer h3{
+    font-size: large;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+a,img,li{
+    display: inline;
+}
+
+img{
+    width: 40px;
+    padding: 1rem 0.2rem;
+}
