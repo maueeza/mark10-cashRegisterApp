@@ -1,2 +1,7 @@
-# mark10-cashRegisterApp
- This is the Cash register app to help shopkeeper to return change with minimum number of notes
+# Cash Register App
+ This app helps shopkeeper to figure out to return minimum of notes as change to customer from available denominations.
+
+It is developed using - 
+1. HTML
+2. CSS
+3. VanillaJS
